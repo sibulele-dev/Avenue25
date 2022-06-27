@@ -1,0 +1,27 @@
+{
+  "name": "avenue25",
+  "version": "1.0.0",
+  "description": "Offiicial Avenue25 site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sibulele-dev/a25.git"
+  },
+  "keywords": [
+    "Digital",
+    "Agency",
+    "Web",
+    "Development",
+    "Digital",
+    "Marketing"
+  ],
+  "author": "Avenue25",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sibulele-dev/a25/issues"
+  },
+  "homepage": "https://github.com/sibulele-dev/a25#readme"
+}
