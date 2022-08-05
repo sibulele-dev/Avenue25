@@ -1,0 +1,42 @@
+
+.contact{
+    height: 60vh;
+    max-width: calc((100vw -1200px) / 2);
+    margin: 0 auto ;
+    margin-top: 5rem;
+}
+.contactText{
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+.contactText h2{
+    font-size: 2.4rem;
+    margin-bottom: 2rem ;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactForm input{
+    margin: 1rem .5rem;
+    width: 550px;
+    font-size: 1.1rem;
+    color: var(--text);
+    padding: .5rem .3rem;
+    border: none;
+    border-bottom: 1px solid var(--text);
+    outline: none;
+}
+.contactForm a{
+    margin: 2rem 0;
+    border: 2px solid var(--text);
+    color: var(--text);
+    padding: .7rem 1rem;
+    font-weight: 500;
+}
+.contactForm a:hover{
+    border: 2px solid var(--primaryBlue);
+}

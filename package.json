@@ -1,27 +1,29 @@
 {
-  "name": "avenue25",
-  "version": "1.0.0",
-  "description": "Offiicial Avenue25 site",
-  "main": "index.js",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sibulele-dev/a25.git"
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/styles": "^5.8.4",
+    "bootstrap": "^5.1.3",
+    "express": "^4.18.1",
+    "next": "12.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "swiper": "^8.3.2"
   },
-  "keywords": [
-    "Digital",
-    "Agency",
-    "Web",
-    "Development",
-    "Digital",
-    "Marketing"
-  ],
-  "author": "Avenue25",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sibulele-dev/a25/issues"
-  },
-  "homepage": "https://github.com/sibulele-dev/a25#readme"
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6",
+    "sass": "^1.53.0"
+  }
 }

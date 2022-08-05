@@ -1,0 +1,66 @@
+.accordianWrapper{
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  max-width: calc((110vw -1200px) /2);
+  margin:0 auto;
+}
+.accordion{
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.accordion:last-child{
+  margin-bottom: 0;
+}
+.accordionLabel{
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  background: rgba(4,57,94,.8);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.accordionLabel:hover {
+  background: rgba(4,57,94,1);
+}
+.accordionLabel::after {
+  content: "\276F";
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordionContent {
+  max-height: 0;
+  padding: 0 16px;
+  color: rgba(4,57,94,1);
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordionContent p{
+  margin: 0;
+  color: rgba(4,57,94,.7);
+  font-size: 18px;
+}
+input:checked + .accordionLabel {
+  background: rgba(4,57,94,1);
+}
+input:checked + .accordionLabel::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input:checked ~ .accordionContent {
+  max-height: 100vh;
+  padding: 16px;
+}
+.accordion input{
+  display: none;
+}
+

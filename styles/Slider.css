@@ -1,0 +1,65 @@
+.sliderContainer{
+    max-width: calc((120vw -1200px) / 2);
+    margin: 0 auto;
+}
+.sliderHeading{
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.Pricingcard{
+    background: white;
+    width: 20em;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.cardTitle{
+    background-color: var(--hover);
+    padding: 1.5rem;
+}
+.cardTitle h1{
+    font-size: 1.2rem;
+      text-transform: uppercase;
+      color: var(--white);
+      font-weight: 700;
+}
+.infoContainer{
+    padding: 2rem;
+    color: var(--text);
+    box-sizing: border-box;
+}
+.infoContainer p{
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    margin-top: 0;
+    display: inline-block;
+    width: 80%;
+}
+.infoContainer span{
+    font-size: 0.75rem;
+    display: inline-block;
+}
+.PriceOptions{
+    font-size: 1.1rem;
+    list-style: none;
+    padding-left: 0;
+}
+.PriceOptions li{
+    padding: .5rem .3rem;
+}
+.Pricingcard a{
+    border: 2px solid var(--primaryBlue);
+      padding:1rem .8rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.25s;
+      margin: 1.2rem auto;
+      box-sizing: border-box;
+      max-width: 70%;
+      display: block;
+      font-weight: 700;
+}
