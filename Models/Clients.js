@@ -8,7 +8,7 @@ const ClientSchema = new mongoose.schema({
     Phone:{
         type: Number,
         required: [true, 'Please enter phone number'],
-        maxLength:[10, 'Phone number cannot be more than 10 characters'],
+        maxlength:[10, 'Phone number cannot be more than 10 characters'],
 
     },
     Email: {
