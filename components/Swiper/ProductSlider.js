@@ -10,7 +10,9 @@ import "swiper/css/navigation";
 
 function ProductSlider() {
 
-   
+   const [Price, setPrice] = useState([
+      {Package: 'Junior Packge', Cost:'350', Deals:['Maintenance', 'SSl Certificate', 'Domain Name', 'Emails']},
+   ])
 
   return (
     <div className="sliderContainer" >
@@ -30,15 +32,8 @@ function ProductSlider() {
             onSlideChange={() => console.log('slide change')}
         >
             <SwiperSlide>
-              <PricingCard />
+              <PricingCard Data={Price}/>
             </SwiperSlide>
-            <SwiperSlide>
-              <PricingCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PricingCard />
-            </SwiperSlide>
-            
         </Swiper>
         
     </div>
