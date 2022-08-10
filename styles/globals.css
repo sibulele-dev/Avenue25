@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;300;400;500;600;700&family=Lalezar&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root{
 
@@ -45,7 +47,7 @@ li{
     position: sticky;
     top: 0;
     height: 70px;
-    max-width: 1200px;
+    max-width: 1500px;
     width: 100%;
     margin: 1rem auto;
     padding :1rem 2rem;

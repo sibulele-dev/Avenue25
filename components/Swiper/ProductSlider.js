@@ -1,18 +1,16 @@
 import React , { useRef, useState }from 'react';
 import { Navigation, Pagination} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import PricingCard from './PricingCard'
+
 
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "swiper/css/navigation";
 
-function ProductSlider() {
+function ProductSlider(props) {
 
-   const [Price, setPrice] = useState([
-      {Package: 'Junior Packge', Cost:'350', Deals:['Maintenance', 'SSl Certificate', 'Domain Name', 'Emails']},
-   ])
+   const Slide = props.price
 
   return (
     <div className="sliderContainer" >
@@ -27,13 +25,34 @@ function ProductSlider() {
             spaceBetween={50}
             slidesPerView={3}
             navigation={true}
-            pagination={{ clickable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
         >
-            <SwiperSlide>
-              <PricingCard Data={Price}/>
-            </SwiperSlide>
+            {Slide.map((data, i) => {
+              <SwiperSlide key={data.id}>
+                <div className="Pricingcard">
+                      <div className="cardTitle">
+                      <h1>{data.Package}</h1>
+                      </div>
+                      <div className="infoContainer">
+                      <p>R{data.Cost}<span>/mon</span></p>
+                      <ul className="PriceOptions">
+                          {data.Deals.map((deal, index) => {
+                            return(
+                              <li key={index}>
+                                {deal}
+                              </li>
+                            )
+                          })} 
+                          <li>Maintena</li>
+                          <li>Maintena</li>
+                          <li>Maintena</li>
+                          <li>Maintena</li>
+                          
+                      </ul>
+                      <a href=""> Choose me</a>
+                      </div>
+                </div>
+              </SwiperSlide>
+            })}
         </Swiper>
         
     </div>

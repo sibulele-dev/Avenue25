@@ -12,6 +12,11 @@ const navLinks = [
     name: 'Pricing',
     href: '/pricing',
   },
+  {
+    name: 'Services',
+    href: '/services',
+  },
+  
 ];
 
 
