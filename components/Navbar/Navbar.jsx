@@ -1,21 +1,20 @@
-import React, { useState } from "react";
-import { Transition } from "@headlessui/react";
-import { GoThreeBars } from "react-icons/go";
-import { ImCross } from "react-icons/im";
+import React, { useState } from 'react';
+import { GoThreeBars } from 'react-icons/go';
+import { ImCross } from 'react-icons/im';
 
 function Navbar() {
   const [navLinks, setLinks] = useState([
     {
-      name: "Home",
-      href: "/",
+      name: 'Home',
+      href: '/',
     },
     {
-      name: "Pricing",
-      href: "/pricing",
+      name: 'Pricing',
+      href: '/pricing',
     },
     {
-      name: "Services",
-      href: "/services",
+      name: 'Services',
+      href: '/services',
     },
   ]);
   const [active, setActive] = useState(null);
@@ -38,11 +37,11 @@ function Navbar() {
                 <div className="flex ml-10 items-baseline space-x-4">
                   {navLinks.map((link, i) => {
                     return (
-                      <a 
-                      href="" 
-                      key={i}
-                      onClick={() => setActive(link)}
-                      className={`cursor-pointer text-b {active ==}`}
+                      <a
+                        href=""
+                        key={i}
+                        onClick={() => setActive(link)}
+                        className={`cursor-pointer text-black {active == link && 'active:text-blue-500'}`}
                       >
                         {link.name}
                       </a>
