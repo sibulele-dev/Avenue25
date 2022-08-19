@@ -77,7 +77,7 @@ export default function Home() {
         <div className="flex flex-col items-center text-center mt-10">
           <h2 className="capitalize text-6xl font-semibold text-cyan-900">Lets work together</h2>
           <ul className="flex flex-col sm:flex-row justify-center item-center mt-5 font-medium text-lg mb-10">
-            <li className="pr-2 border-none sm:border-r-black sm:border-r">WebDevelopment</li>
+            <li className="pr-2 border-none sm:border-r">WebDevelopment</li>
             <li className="pr-2 border-none sm:border-r-black sm:border-r">Digital Marketing</li>
             <li className="pr-2 border-none sm:border-r-black sm:border-r">Cloud Services</li>
             <li className="pl-2 ">Network and Security</li>

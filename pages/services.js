@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import Services from '../components/Forms/Services'
-import Layout from '../components/Layout';
+import Layout from '../components/Layout/Layout';
 import {IoChevronForwardCircleOutline, IoChevronForwardOutline} from 'react-icons/io'
 
 
@@ -16,7 +16,10 @@ export default function services() {
         <Layout>
 
         {/* Service Chevron */}
-
+            {/* banner */}
+        <div className="w-full h-[60vh] bg-center bg-cover bg-[url('https://ik.imagekit.io/knqnox49e/Img/paper_plane_sflTHo5oP.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660813673662')] ">
+            <div />
+        </div>
         <div className="accordianWrapper">
             <div className="accordion">
                 <input type="radio" name="control" id="web" checked/>
