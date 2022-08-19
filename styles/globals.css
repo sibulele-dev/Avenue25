@@ -221,7 +221,7 @@ li{
 }
 
 .footer{
-    max-width: calc((120vw -1200px) / 2);
+    max-width: calc((185vw -1200px) / 2);
     margin: 0rem auto;
     margin-top: 4rem;
 }
