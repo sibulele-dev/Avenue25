@@ -3,7 +3,6 @@ import { GoThreeBars } from "react-icons/go";
 import { ImCross } from "react-icons/im";
 import { Navlinks } from "../../utils/Navlinks";
 import Button from "../Button/Button";
-import Link from "next/link";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -32,7 +31,7 @@ function Navbar() {
           <ul className={` md:flex items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] w-full left-0 md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${open ? 'top-16': 'top-[-460px]'}`}>
             {Navlinks.map((link, i) => (
               <li key={i} className="uppercase text-black px-4 text-base md:ml-8 md:my-0 my-7">
-                <Link
+                <a
                   href={link.href}
                   onClick={() => setActive(link)}
                   className={`text-black ${
@@ -40,11 +39,11 @@ function Navbar() {
                   }`}
                 >
                   {link.name}
-                </Link>
+                </a>
               </li>
             ))}
 
-            <Button>Get in touch</Button>
+            <a href="/contact" className="bg-blue-500 py-1 px-2 rounded-md hover:bg-blue-600 text-base text-white capitalize">Contact us</a>
           </ul>
 
 

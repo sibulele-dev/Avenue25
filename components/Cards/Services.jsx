@@ -2,7 +2,7 @@ import React from "react";
 
 function Services(props) {
   return (
-    <div className="w-full max-w-xs bg-white shadow-md rounded-lg border border-gray-200 px-4 py-3 mx-2 my-4">
+    <div className="w-full max-w-xs min-h-[26rem] bg-white shadow-md rounded-lg border border-gray-200 px-4 py-3 mx-2 my-4">
       <div className="flex flex-col items-center pb-10">
         <img
           className="mb-3 w-28 h-28 rounded-full shadow-lg"

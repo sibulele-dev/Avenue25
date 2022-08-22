@@ -11,7 +11,7 @@ export default function Home() {
         <title>Avenue 25</title>
         <meta
           name="description"
-          content="A digital Agency focused on esults and change, we are progressive and all our products are streamlined to offer you the best service possible"
+          content="A digital Agency focused on results and change, we are progressive and all our products are streamlined to offer you the best service possible"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -49,19 +49,15 @@ export default function Home() {
             <p className="font-semibold text-xl mb-2  ">Who we are</p>
             <h3 className="text-4xl font-semibold text-cyan-900 mb-4">All things Digital</h3>
             <p className="mx-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              dolores eos eius quia commodi iure inventore totam, veniam aliquid
-              nesciunt quaerat deserunt possimus accusamus consectetur officia.
-              Fuga praesentium consectetur accusantium. Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Error commodi hic, ipsa eos
-              natus eaque ipsam voluptas impedit dicta minus harum quae dolores
-              vel laborum accusamus consequuntur maxime placeat non.
+              We are a Digital agency rooted in creativity, we are able to create ometing out of nothing an our work is more memorable and influential because we put innovation at the fore front to solve problems and create solutions no one else thought of.
+              e have a team that communicates effectively, ensuring that we address your needs in a timely manne and communication is the pinacle and foundation in which our customer care is built on.
               <br />
               <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              quae corporis eos voluptate iure unde accusantium similique ipsam
-              veritatis minus eaque nostrum ab, quasi fugiat placeat inventore
-              cum ipsum est.
+              We understand tht no two projects are the same so we pride ourselves in the ability to adjust and give each project the  attention it deserves. Knowing that change happens all the time, we are always prepared to deal with every change we face with the lifespan of each projects.
+              <br />
+              We know the select / niche services that we offer to the core so you can trut that we know where we fit in the market and how to solve any of your Digital needs.
+              <br />
+              Get in touch wih us today and we will solve your digital needs  
             </p>
           </div>
           <div className="ml-12">
@@ -82,7 +78,7 @@ export default function Home() {
             <li className="pr-2 border-none sm:border-r-black sm:border-r">Cloud Services</li>
             <li className="pl-2 ">Network and Security</li>
           </ul>
-          <a href="" className="px-2 py-3 border-2 rounded-full hover:border-none hover:bg-blue-600 hover:text-white hover:py-4 hover:px-3 border-blue-600">Get In Touch</a>
+          <a href="/contact" className="px-2 py-3 border-2 rounded-full hover:border-none hover:bg-blue-600 hover:text-white hover:py-4 hover:px-3 border-blue-600">Get In Touch</a>
         </div>
       </Layout>
     </div>
