@@ -8,7 +8,7 @@ function Services(props) {
           className="mb-3 w-28 h-28 rounded-full shadow-lg"
           src={props.img}
         />
-        <h5 class="mb-1 text-2xl font-medium text-gray-900 dark:text-white">
+        <h5 className="mb-1 text-2xl font-medium text-gray-900 dark:text-white">
           {props.title}
         </h5>
         <p className="text-base text-gray-500 text-center">
