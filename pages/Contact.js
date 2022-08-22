@@ -5,7 +5,7 @@ import Banner from "../components/Banner/Banner";
 import axios from "axios";
 import { useRouter } from "next/router";
 
-export default function contact() {
+export default function Contact() {
 
   // const [name, setName] = useState("");
   // const [tel, setTel] =useState("");
