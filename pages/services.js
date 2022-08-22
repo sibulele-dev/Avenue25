@@ -5,7 +5,7 @@ import { BiRightArrowCircle } from "react-icons/bi";
 import Banner from "../components/Banner/Banner";
 
 export default function services() {
-  const [web, isWeb] = useState([
+  const web = [
     "Web Design & Development",
     "Mock up Design ",
     "UI/Ux Design",
@@ -13,25 +13,25 @@ export default function services() {
     "API connection",
     "Backend Connection ",
     "cms",
-  ]);
-  const [security, isSecurity] = useState([
+  ];
+  const security = [
     "Password Security",
     "Network and Internet Security",
     "Database and Server Access",
     "Network audit and Vulnerability report",
     "Forensic Analysis",
     "Preventative maintenance and network monitoring solutions",
-    "Enterprise grade managed file transfer and automation (MFT)",
+    "Enterprise grade managed file transfer and automation (MFT",
     "Business continuity with application and user intelligence fail over features",
     "White/grey/black box penetration testing and vulnerability assessment",
-  ]);
-  const [net, isNet] = useState([
+  ];
+  const net = [
     "Onsite and remote support",
     "Installation and configuration",
     "Maintenance",
     "Full network auditing",
-  ]);
-  const [dig, isDig] = useState([
+  ];
+  const dig = [
     "Search Engine optimasation (SEO)",
     "Digital Marketing & Advertising",
     "Google Ad Sense ",
@@ -44,14 +44,14 @@ export default function services() {
     "Email Marketing",
     "Email Branding",
     " Search Engine Marketing",
-  ]);
-  const [cloud, isCloud] = useState([
+  ];
+  const cloud = [
     "Cloud Migration",
     "Infrastructure Service",
     "Data Transformation",
     "Sustainable IT and Technologies",
     "Cloud Security",
-  ]);
+  ];
   return (
     <div>
       <Head>
@@ -82,7 +82,7 @@ export default function services() {
         <div className="accordianWrapper">
           <div className="accordion">
             <input type="radio" name="control" id="web" checked />
-            <label className="accordionLabel" for="web">
+            <label className="accordionLabel" htmlFor="web">
               Web Development
             </label>
             <div className="accordionContent">
@@ -109,7 +109,7 @@ export default function services() {
 
           <div className="accordion">
             <input type="radio" name="control" id="DM" checked />
-            <label className="accordionLabel" for="DM">
+            <label className="accordionLabel" htmlFor="DM">
               Digital Marketing
             </label>
             <div className="accordionContent">
@@ -141,7 +141,7 @@ export default function services() {
 
           <div className="accordion">
             <input type="radio" name="control" id="net" checked />
-            <label className="accordionLabel" for="net">
+            <label className="accordionLabel" htmlFor="net">
               Network and Security
             </label>
             <div className="accordionContent">
@@ -180,7 +180,7 @@ export default function services() {
 
           <div className="accordion">
             <input type="radio" name="control" id="cloud" />
-            <label className="accordionLabel" for="cloud">
+            <label className="accordionLabel" htmlFor="cloud">
               Cloud Solutions
             </label>
             <div className="accordionContent">
@@ -206,7 +206,7 @@ export default function services() {
 
           <div className="accordion">
             <input type="radio" name="control" id="other" />
-            <label className="accordionLabel" for="other">
+            <label className="accordionLabel" htmlFor="other">
               Other Services
             </label>
             <div className="accordionContent">

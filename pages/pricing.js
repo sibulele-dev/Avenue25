@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout";
 import Banner from "../components/Banner/Banner";
 
 export default function pricing() {
-  const [Price, setPrice] = useState([
+  const Price = [
     {
       Package: "Beginner",
       Cost: "450",
@@ -24,7 +24,7 @@ export default function pricing() {
       Deals: ["10 pages ", "Mobile optimised Website","Search engine Optimisation", "24/7 support", "SSl Certificate/Security", "Free Domain Name", "25 Emails"],
       id: "3",
     },
-  ]);
+  ];
 
   const Hosting = [
     {

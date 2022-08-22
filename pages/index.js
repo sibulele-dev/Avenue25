@@ -39,6 +39,8 @@ export default function Home() {
                 title={service.name}
                 img={service.imageLink}
                 text={service.text}
+
+                key={i}
               />
             ))}
           </div>

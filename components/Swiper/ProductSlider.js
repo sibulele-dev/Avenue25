@@ -42,8 +42,8 @@ function ProductSlider(props) {
 
         className="mx-auto"    
       >
-        {Price.map((item) => (
-          <SwiperSlide className="">
+        {Price.map((item, i) => (
+          <SwiperSlide className="" key={i}>
             <div className="Pricingcard">
               <div className="cardTitle">
                 <h1>{item.Package}</h1>
@@ -54,8 +54,8 @@ function ProductSlider(props) {
                   <span>/mon</span>
                 </p>
                 <ul className="PriceOptions">
-                  {item.Deals.map((deal) => (
-                    <li>{deal}</li>
+                  {item.Deals.map((deal, i) => (
+                    <li key={i}>{deal}</li>
                   ))}
                 </ul>
               </div>
