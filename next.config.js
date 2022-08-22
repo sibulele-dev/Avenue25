@@ -8,4 +8,7 @@ module.exports = {
       allowFutureImage: true,
     },
   },
+  future:{
+    webpack5:true
+  }
 };

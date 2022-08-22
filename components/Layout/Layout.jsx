@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "../footer/footer";
+import Footer from "../footer/Footer";
 import Navbar from "../Navbar/Navbar";
 
 function Layout({ children }) {

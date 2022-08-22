@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const [color, setColor] = useState('transparent')
+  const [color, setColor] = useState("transparent");
   const isOpen = () => {
     setOpen(!open);
   };
@@ -28,9 +28,16 @@ function Navbar() {
           </div>
 
           {/* Nav links */}
-          <ul className={` md:flex items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] w-full left-0 md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${open ? 'top-16': 'top-[-460px]'}`}>
+          <ul
+            className={` md:flex items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] w-full left-0 md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${
+              open ? "top-16" : "top-[-460px]"
+            }`}
+          >
             {Navlinks.map((link, i) => (
-              <li key={i} className="uppercase text-black px-4 text-base md:ml-8 md:my-0 my-7">
+              <li
+                key={i}
+                className="uppercase text-black px-4 text-base md:ml-8 md:my-0 my-7"
+              >
                 <a
                   href={link.href}
                   onClick={() => setActive(link)}
@@ -43,16 +50,21 @@ function Navbar() {
               </li>
             ))}
 
-            <a href="/contact" className="bg-blue-500 py-1 px-2 rounded-md hover:bg-blue-600 text-base text-white capitalize">Contact us</a>
+            <a
+              href="/contact"
+              className="bg-blue-500 py-1 px-2 rounded-md hover:bg-blue-600 text-base text-white capitalize"
+            >
+              Contact us
+            </a>
           </ul>
 
-
           {/* Mobile Menu Buttons */}
-          <div className="block md:hidden z-[11] absolute top-5 right-4 text-base text-black cursor-pointer"  onClick={() => setOpen(!open)}>
-            {open ? <ImCross size={20}  /> : <GoThreeBars size={30} />}
+          <div
+            className="block md:hidden z-[11] absolute top-5 right-4 text-base text-black cursor-pointer"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <ImCross size={20} /> : <GoThreeBars size={30} />}
           </div>
-          
-          
         </div>
       </nav>
     </>

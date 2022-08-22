@@ -1,7 +1,7 @@
 import React from "react";
 import { BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs";
 
-function footer() {
+function Footer() {
   return (
     <div>
       <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
@@ -43,4 +43,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;
